@@ -1,8 +1,18 @@
 # Characterization-of-epigenomic-dynamics-of-tomato-
  DNA methylation and RNA sequencing assay for characterisation of (epi)genetic changes on BABA primed tomato plants
 
-2. Pipeline Overview
+**Keywords**
+DNA methylation, Methylation context in plants (CpG, CHG, CHH), Differentially methylated region (DMR)
+
+**Objective(s)**
 To characterize the epigenomic dynamics of tomato (Solanum lycopersicum) during fruit development and tissue differentiation, we established a strand-aware spatial methylome profiling pipeline. This workflow integrates differentially methylated regions (DMRs) in both CHH and CHG sequence contexts with transposable element (TE) structural annotations from the REPET database. The analysis quantifies family-specific TE targeting, genome-wide enrichment relative to background repeat abundance, and fine-scale spatial distribution relative to 5' transposon boundaries.
+
+**Experimental setup**
+
+
+**Complete processing Pipeline**
+
+
 
 3. Step-by-Step Functional Analysis
 Step 1: Identification of DMR Genomic Regions
