@@ -2,20 +2,44 @@
  DNA methylation and RNA sequencing assay for characterisation of (epi)genetic changes on BABA primed tomato plants
 
 **Keywords**
-DNA methylation, Methylation context in plants (CpG, CHG, CHH), Differentially methylated region (DMR)
+
+DNA methylation, Whole genome bisulfite sequencing (WGBS), Methylation contexts in plants (CpG, CHG, CHH), Analysis of Differentially methylated region (DMR), Plant priming
 
 **Objective(s)**
-To characterize the epigenomic dynamics of tomato (Solanum lycopersicum) during fruit development and tissue differentiation, we established a strand-aware spatial methylome profiling pipeline. This workflow integrates differentially methylated regions (DMRs) in both CHH and CHG sequence contexts with transposable element (TE) structural annotations from the REPET database. The analysis quantifies family-specific TE targeting, genome-wide enrichment relative to background repeat abundance, and fine-scale spatial distribution relative to 5' transposon boundaries.
+
+To characterize the epigenomic dynamics of tomato (Solanum lycopersicum) during fruit development and tissue differentiation, I created a comlete, strand-aware spatial methylome profiling pipeline. This workflow integrates differentially methylated regions (DMRs) in both CHH and CHG sequence contexts with transposable element (TE) structural annotations from the REPET database. The complete analysis quantifies family-specific TE targeting, genome-wide enrichment relative to background repeat abundance, and fine-scale spatial distribution relative to 5' transposon boundaries.
+THe data was taken from the following study [1].
 
 **Experimental setup**
 
+Investigation of DNA methylation profile of leaves and fruits of Solanum lycopersicum, from plants exposed to ß-aminobutyric (BABA) at two different developmental stages (2 weeks post germination, 12 weeks pst germination) or treated with water (control).
 
-**Complete processing Pipeline**
+**Bioinformatics processing Pipeline**
+
+The complete bioinformatics processing pipeline is shown on Figure 1. Complete flow was done in several phases, described in subsequent sections.
+
+**Upstream data processing**
+
+Upstream data processeing was done in usegalaxy platform. Upstream data processing included processing of raw reads obtained from [1] in following steps:
+ - Download of reads from NCBI (Fasterq download)
+ - Quality control (fastqc, multiqc)
+ - Adapter trimming (Cutadapt, Trim Galore)
+ - Reorganization of samples (Treated vs. control, 2 wpg vs. 12 wpg) 
+ - Bisulfite genome alignment (bismarck, bwameth)
+ - Methylation calling and extraction of metrics for CpG, CHG and CHH contexts (Methyldackel)
 
 
 
-3. Step-by-Step Functional Analysis
-Step 1: Identification of DMR Genomic Regions
+**Differential methylation analysis**
+
+![Processing pipeline](Complete_processing_flow.png)
+
+**Figure 1: Complete bioinformatics processing pipeline**
+
+
+
+
+**Identification of DMR Genomic Regions**
 Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.
 Contrast Name
 Cytosine Context
@@ -65,3 +89,7 @@ Positive distances (+1 to +2000 bp): Represent internal regions within the TE bo
 Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp using standardized PivotTable parameters (Show items with no data enabled; empty bins set to 0). Line-graph metaplots were generated for each contrast, revealing a sharp, RdDM-driven boundary peak at 0–100 bp in the CHH context versus a broad, internal body distribution (+200 to +1200 bp) in the CHG context.
 [INSERT IMAGE PLACEHOLDER 5: Publication Metaplot Figure Grid (CHH vs. CHG)]
 Caption: Comparative 4-panel line metaplots displaying spatial DMR density around 5' TE boundaries (-1000 bp to +2000 bp) across developmental contrasts for CHH (left panel set) and CHG (right panel set) contexts.
+
+
+**References**
+[1] Developmentally regulated generation of a systemic signal for long-lasting defence priming in tomato [WGBS], Project PRJNA1144133, NCBI (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1144133)
