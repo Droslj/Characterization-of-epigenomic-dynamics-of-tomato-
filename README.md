@@ -31,8 +31,9 @@ Upstream data processeing was done in usegalaxy platform. Upstream data processi
  - Bisulfite genome alignment (bismarck, bwameth)
  - Methylation calling and extraction of metrics for CpG, CHG and CHH contexts (Methyldackel)
 
-[MultiQC initial](MultiQC_initial.zip)
+[MultiQC initial](MultiQC_initial.html)
 
+[MultiQC after adapter trimming](MultiQC_post_T.html)
 
 
 **Differential methylation analysis**
