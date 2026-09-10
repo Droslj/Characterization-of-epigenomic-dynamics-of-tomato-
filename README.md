@@ -18,6 +18,9 @@ Investigation of DNA methylation profile of leaves and fruits of Solanum lycoper
 
 The complete bioinformatics processing pipeline is shown on Figure 1. Complete flow was done in several phases, described in subsequent sections.
 
+![Bioinformatics pipeline](/Images/Complete_processing_flow.png)
+**Figure 1: Complete processing flow**
+
 **Upstream data processing**
 
 Upstream data processeing was done in usegalaxy platform. Upstream data processing included processing of raw reads obtained from [1] in following steps:
@@ -27,6 +30,8 @@ Upstream data processeing was done in usegalaxy platform. Upstream data processi
  - Reorganization of samples (Treated vs. control, 2 wpg vs. 12 wpg) 
  - Bisulfite genome alignment (bismarck, bwameth)
  - Methylation calling and extraction of metrics for CpG, CHG and CHH contexts (Methyldackel)
+
+[MultiQC initial](MultiQC_initial.zip)
 
 
 
