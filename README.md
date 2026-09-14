@@ -85,7 +85,20 @@ Genomic feature distribution for all three contexts shows percentage of total DM
 ![Genomic feature distribution CHH](Images/Genomic_feature_distribution_CHH.png)
 
 **Figure 7: Genomic feature distribution for CHH context**
-Promoters ($\le 2\text{ kb}$ upstream)5′ UTRsCoding ExonsIntrons3′ UTRsIntergenic regionsLayout: A grouped or stacked bar plot comparing CpG, CHG, and CHH contexts side-by-side.Key insight shown: Visually highlights whether CpG DMRs show a preference for gene bodies/promoters compared to CHG/CHH DMRs, which typically skew heavily toward intergenic and repetitive regions.
+
+**Observation on genomic feature distribution**
+
+Ad 1) Intergenic Dominance Across All Contexts
+Across CpG, CHG, and CHH DMR sets, intergenic sequences represent the largest single category, consistently capturing between 60 and 80% of all differentially methylated regions. This robust intergenic skew reflects large-scale developmental remodeling within transposon-rich and non-coding heterochromatic domains of the tomato genome.
+
+Ad 2) Non-CG (CHH and CHG) Enrichment in Repetitive Spaces 
+The CHH and CHG contexts exhibit a heavy restriction to intergenic spaces with minimal representation in coding exons (< 5%). This strongly conforms to canonical RNA-directed DNA methylation (RdDM) and CMT-mediated maintenance pathways, which target transposable elements and repetitive intergenic regions to maintain genome stability without disrupting protein-coding transcription.
+
+Ad 3) Gene-Body and Intronic Integration in CpG Methylation 
+In contrast to non-CG contexts, the CpG DMR distributions display a much higher relative abundance within intronic regions (~15-30%) and promoter zones (< 2kb). This structural partitioning matches the expected functional role of symmetrical CG methylation, which frequently populates gene bodies and regulatory interfaces to modulate transcriptional activity and alternative splicing during plant development.
+
+Ad 4) Developmental and Tissue-Specific Plasticity
+The consistent proportional stability across leaf and fruit comparisons (both 2 vs. 12 WPG) demonstrates that while specific loci undergo targeted methylation changes during tissue maturation and organogenesis, the global genomic compartments targeted by epigenetic modifiers remain tightly conserved.
 
 # Mapping DMRs to REPET Annotations
 
