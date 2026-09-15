@@ -100,28 +100,40 @@ In contrast to non-CG contexts, the CpG DMR distributions display a much higher 
 Ad 4) Developmental and Tissue-Specific Plasticity<br>
 The consistent proportional stability across leaf and fruit comparisons (both 2 vs. 12 WPG) demonstrates that while specific loci undergo targeted methylation changes during tissue maturation and organogenesis, the global genomic compartments targeted by epigenetic modifiers remain tightly conserved.<br>
 <br>
-# Mapping DMRs to REPET Annotations<br>
+# Transposable element Feature distribution<br>
 <br>
-Similarly as with the genomic feature distribution, identified DMRs were mapped to genomic repeats by intersecting with REPET annotation (ITAG4.0_REPET_repeats_aggressive.gff). Spatial intersections were computed using bedtools intersect, capturing both direct physical overlaps (Distance = 0 bp) and proximal flanking relationships (up to 2000 bp upstream/downstream) for all three contexts. Transposons were classified into structural categories, including Class I LTR (Copia, Gypsy), Class I non-LTR (LINE, SINE), Class II (Helitron), Host Gene Exons/Fragments, and Unclassified / Degraded elements.
+Similarly as with the genomic feature distribution, identified DMRs were mapped to genomic repeats by intersecting with REPET annotation (ITAG4.0_REPET_repeats_aggressive.gff). Spatial intersections were computed using bedtools intersect, capturing both direct physical overlaps (Distance = 0 bp) and proximal flanking relationships (up to 2000 bp upstream/downstream) for all three contexts. Transposons were classified into structural categories, including Class I LTR (Copia, Gypsy), Class I non-LTR (LINE, SINE), Class II (Helitron), Host Gene Exons/Fragments, and Unclassified / Degraded elements.<br>
+<br>
 
-
-![TE features](Transposable_feature_distribution_CHG.png)
+![TE features](Images/Transposable_feature_distribution_CHG.png)
 
 **Figure 8: Transposable feature content for CHG context**
 
 
-![TE features](Transposable_feature_distribution_CHH.png)
+![TE features](Images/Transposable_feature_distribution_CHH.png)
 
 **Figure 9: Transposable feature content for CHH context**
+<br>
+
+**Observations**
+
+Both non-CG contexts (CHG and CHH) exhibit a heavy positional skew toward intergenic regions and promoter-proximal spaces, reflecting characteristic epigenetic targeting of non-coding and heterochromatic compartments.
+LTR Retrotransposon Enrichment
+DMRs in both CHG and CHH contexts are predominantly driven by Class I LTR retrotransposons, specifically balancing across Gypsy and Copia superfamilies. This aligns with canonical plant heterochromatin silencing models via CMT and RdDM pathways.
+Host Gene and Degraded Fraction Involvement 
+Substantial intersections with Host Gene / Exonic Fragments and Unclassified / Degraded repeat fractions highlight a complex overlap between transposable element insertions and gene-proximal regulatory regions.
 
 
-
-Step 3: DMR Distribution by REPET Feature Category
 Quantification of DMR occurrences across REPET feature categories revealed distinct targeting preferences between cytosine contexts. While CHH DMRs preferentially localized near truncated remnants and LTR elements, CHG DMRs showed broader distribution across degraded repeat fragments, host gene exons, and Helitrons.
 [INSERT IMAGE PLACEHOLDER 3: DMR Distribution Across REPET Categories Bar Charts]
 Caption: Categorical bar plots displaying total DMR counts grouped by REPET feature classes across CHH and CHG contexts.
 
-Step 4: Whole-Genome Background Enrichment Analysis
+# Integration of Genomic Features and Transposable Elements
+
+
+
+# Whole-Genome Background Enrichment Analysis
+
 To determine whether dynamic methylation non-randomly targets specific repeat families, hypergeometric enrichment testing was conducted against the whole-genome REPET background. Observed DMR counts per TE category were compared against total genome-wide REPET feature frequencies. This step established statistically significant enrichment (p < 0.05) for truncated/degraded repeat fragments and specific LTR subfamilies relative to background genomic expectations.
 [INSERT IMAGE PLACEHOLDER 4: Hypergeometric Enrichment Analysis Plots]
 Caption: Fold-enrichment heatmaps and statistical significance (-log10 p-values) comparing observed DMR-TE associations against whole-genome background distribution.
