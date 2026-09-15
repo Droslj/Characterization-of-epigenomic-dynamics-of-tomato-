@@ -130,6 +130,15 @@ Caption: Categorical bar plots displaying total DMR counts grouped by REPET feat
 
 # Integration of Genomic Features and Transposable Elements
 
+Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_aggressive.gff repeat annotation files provides  DMR overlap across all transposable element superfamilies (Copia, Gypsy, Helitrons, LINEs, etc.) that were identified by the REPET pipeline. 
+
+![DMR distribution across REPET for CHG context](Images/DMR_distribution_across_REPET_CHG.png)
+
+**Figure 10: DMR Distribution Across REPET Categories for CHG context**
+
+![DMR distribution across REPET for CHH context](Images/DMR_distribution_across_REPET_CHH.png)
+
+**Figure 11: DMR Distribution Across REPET Categories for CHH context**
 
 
 # Whole-Genome Background Enrichment Analysis
