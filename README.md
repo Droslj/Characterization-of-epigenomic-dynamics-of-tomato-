@@ -144,23 +144,35 @@ Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_
 # Whole-Genome Background Enrichment Analysis
 
 To determine whether dynamic methylation non-randomly targets specific repeat families, hypergeometric enrichment testing was conducted against the whole-genome REPET background. Observed DMR counts per TE category were compared against total genome-wide REPET feature frequencies. This step established statistically significant enrichment (p < 0.05) for truncated/degraded repeat fragments and specific LTR subfamilies relative to background genomic expectations.
-[INSERT IMAGE PLACEHOLDER 4: Hypergeometric Enrichment Analysis Plots]
-Caption: Fold-enrichment heatmaps and statistical significance (-log10 p-values) comparing observed DMR-TE associations against whole-genome background distribution.
 
-Step 5: Spatial Metaplot Analysis Around 5' TE Boundaries
+![Whole genome background enrichment - CHG context](Images/Background_enrichment_CHG.png)
+
+**Figure 12: Whole genome background enrichment (CHG context)**
+
+![Whole genome background enrichment - CHH context](Images/Background_enrichment_CHH.png)
+
+**Figure 13: Whole genome background enrichment (CHH context)**
+
+
+# Spatial Metaplot Analysis Around 5' TE Boundaries
+
 To resolve the precise spatial targeting of methylation relative to transposon architecture, distance vectors were computed from each DMR center to the 5' insertion edge of the nearest TE.
-To maintain biological orientation across both forward (+) and reverse (-) strand transposons, a strand-aware coordinate transformation was applied:
-Distance = IF(Strand = "-", REPET_End - DMR_Start, DMR_Start - REPET_Start)
+To maintain biological orientation across both forward (+) and reverse (-) strand transposons, a strand-aware coordinate transformation was applied.
+
+![Spatial metaplot analysis - CHG context](Images/Spatial_metaplot_CHG.png)
+
+**Figure 14: Spatial metaplot (CHG context)**
+
+![Spatial metaplot analysis - CHH context](Images/Spatial_metaplot_CHH.png)
+
+**Figure 15: Spatial metaplot (CHH context)**
 
 
 Under this framework:
 Negative distances (-1000 to -1 bp): Represent the 5' euchromatic outer flank (5' promoter-proximal region).
-Zero (0 bp): Represents the physical insertion boundary.
-Positive distances (+1 to +2000 bp): Represent internal regions within the TE body.
-Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp using standardized PivotTable parameters (Show items with no data enabled; empty bins set to 0). Line-graph metaplots were generated for each contrast, revealing a sharp, RdDM-driven boundary peak at 0–100 bp in the CHH context versus a broad, internal body distribution (+200 to +1200 bp) in the CHG context.
-[INSERT IMAGE PLACEHOLDER 5: Publication Metaplot Figure Grid (CHH vs. CHG)]
-Caption: Comparative 4-panel line metaplots displaying spatial DMR density around 5' TE boundaries (-1000 bp to +2000 bp) across developmental contrasts for CHH (left panel set) and CHG (right panel set) contexts.
-
+Zero (0 bp): Represents the physical insertion boundary
+Positive distances (+1 to +2000 bp): Represent internal regions within the TE body
+Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp u)
 
 **References**
 [1] Developmentally regulated generation of a systemic signal for long-lasting defence priming in tomato [WGBS], Project PRJNA1144133, NCBI (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1144133)
