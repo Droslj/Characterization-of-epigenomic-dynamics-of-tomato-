@@ -125,8 +125,6 @@ Substantial intersections with Host Gene / Exonic Fragments and Unclassified / D
 
 
 Quantification of DMR occurrences across REPET feature categories revealed distinct targeting preferences between cytosine contexts. While CHH DMRs preferentially localized near truncated remnants and LTR elements, CHG DMRs showed broader distribution across degraded repeat fragments, host gene exons, and Helitrons.
-[INSERT IMAGE PLACEHOLDER 3: DMR Distribution Across REPET Categories Bar Charts]
-Caption: Categorical bar plots displaying total DMR counts grouped by REPET feature classes across CHH and CHG contexts.
 
 # Integration of Genomic Features and Transposable Elements
 
