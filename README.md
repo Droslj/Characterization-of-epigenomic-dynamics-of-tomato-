@@ -143,11 +143,11 @@ Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_
 
 To determine whether dynamic methylation non-randomly targets specific repeat families, hypergeometric enrichment testing was conducted against the whole-genome REPET background. Observed DMR counts per TE category were compared against total genome-wide REPET feature frequencies. This step established statistically significant enrichment (p < 0.05) for truncated/degraded repeat fragments and specific LTR subfamilies relative to background genomic expectations.
 
-![Whole genome background enrichment - CHG context](Images/Background_enrichment_CHG.png)
+![Whole genome background enrichment - CHG context](Images/BG_enrichment_CHG.png)
 
 **Figure 12: Whole genome background enrichment (CHG context)**
 
-![Whole genome background enrichment - CHH context](Images/Background_enrichment_CHH.png)
+![Whole genome background enrichment - CHH context](Images/BG_enrichment_CHH.png)
 
 **Figure 13: Whole genome background enrichment (CHH context)**
 
