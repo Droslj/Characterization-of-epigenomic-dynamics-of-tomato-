@@ -59,6 +59,7 @@ To determine the potential regulatory impact of epigenomic variations identified
  <br>
 Genes obtained in the previous step were extracted and used for pathway enrichment (gProfiler). Results obtained are summarized in the Table 1'
 <br>
+
 ![Summary of pathway enrichment](Images/Pathway_enrichment.png)
 
 **Table 1: Summary of pathway enrichment** 
