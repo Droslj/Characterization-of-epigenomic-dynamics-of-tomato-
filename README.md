@@ -66,12 +66,13 @@ Genes obtained in the previous step were extracted and used for pathway enrichme
 <br>
 **Comment on pathway enrichment**
 <br>
-1) CpG context focuses on Seed/Embryo Maturation. The primary CpG epigenetic shifts during fruit transition (2 to 12 WPG Fruit) specifically target embryo and seed development (GO:0009790, GO:0009793, GO:0048316), matching the internal biological shifts of ripening tomato fruits preparing for seed dormancy.<br>
-<br>
-2) CHH context focuses on Membrane & Stress Signaling. CHH changes dynamically target cell surface signaling (plasma membrane and cell periphery) during fruit maturation, as well as broader stress responsiveness (cellular response to stimulus) during early tissue differentiation.<br>
-<br>
-3) CHG context didn't provide any significantly enriched pathways.<br>
 
+CpG context focuses on Seed/Embryo Maturation. The primary CpG epigenetic shifts during fruit transition (2 to 12 WPG Fruit) specifically target embryo and seed development (GO:0009790, GO:0009793, GO:0048316), matching the internal biological shifts of ripening tomato fruits preparing for seed dormancy.<br>
+<br>
+CHH context focuses on Membrane & Stress Signaling. CHH changes dynamically target cell surface signaling (plasma membrane and cell periphery) during fruit maturation, as well as broader stress responsiveness (cellular response to stimulus) during early tissue differentiation.<br>
+<br>
+CHG context didn't provide any significantly enriched pathways.<br>
+<br>
 # Genomic Feature Distribution<br>
 <br>
 Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff). Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 5 - 7.<br>
