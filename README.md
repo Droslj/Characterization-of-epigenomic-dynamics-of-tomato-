@@ -64,8 +64,6 @@ Genes obtained in the previous step were extracted and used for pathway enrichme
 
 **Table 1: Summary of pathway enrichment** 
 <br>
-**Comment on pathway enrichment**
-<br>
 
 CpG context focuses on Seed/Embryo Maturation. The primary CpG epigenetic shifts during fruit transition (2 to 12 WPG Fruit) specifically target embryo and seed development (GO:0009790, GO:0009793, GO:0048316), matching the internal biological shifts of ripening tomato fruits preparing for seed dormancy.<br>
 <br>
