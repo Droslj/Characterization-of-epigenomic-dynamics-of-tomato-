@@ -36,44 +36,45 @@ Upstream data processeing was done in usegalaxy platform. Upstream data processi
 [MultiQC after adapter trimming](https://droslj.github.io/Characterization-of-epigenomic-dynamics-of-tomato-/MultiQC_post_T.html)
 
 # Differential methylation analysis
-Identification of DMR Genomic Regions (using metilene tool) identified differentially methylation regions for all relevant contexts (CpG, CHG and CHH). Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01)Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.
-
+Identification of DMR Genomic Regions (using metilene tool) identified differentially methylation regions for all relevant contexts (CpG, CHG and CHH). Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01)Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.<br>
+<br>
 ![Genome wide DMR distribution for CpG context](Images/CpG_DMR_Density_Composite_2x2.png)
-
+<br>
 **Figure 2: Genomic distribution map showing identified CpG counts across chromosomes for each developmental contrast**
-
+<br>
 ![Genome wide DMR distribution for CHG context](Images/CHG_DMR_Density_Composite_2x2.png)
-
+<br>
 **Figure 3: Genomic distribution map showing identified CHG DMR counts across chromosomes for each developmental contrast**
-
+<br>
 ![Genome wide DMR distribution for CHH context](Images/CHH_DMR_Density_Composite_2x2.png)
-
+<br>
 **Figure 4: Genomic distribution map showing identified CHH DMR counts across chromosomes for each developmental contrast**
-
+<br>
 # Functional gene annotation
-
+<br>
 To determine the potential regulatory impact of epigenomic variations identified across Solanum lycopersicum tissues and developmental stages, differentially methylated regions (DMRs) across CpG, CHG, and CHH contexts were mapped against genomic feature annotations (ITAG4.0 gene models). Additionally, obtained genes were extracted for pathway enrichment (see following section). Only genes that fall within  promoter region (i.e. < 2000 b.p.) were retained.
+<br>
 
-## Pathway enrichment
-
+ ## Pathway enrichment
+ <br>
 Genes obtained in the previous step were extracted and used for pathway enrichment (gProfiler). Results obtained are summarized in the Table 1'
-
+<br>
 ![Summary of pathway enrichment](Images/Pathway_enrichment.png)
 
 **Table 1: Summary of pathway enrichment** 
-
+<br>
 **Comment on pathway enrichment**
+<br>
+1) CpG context focuses on Seed/Embryo Maturation. The primary CpG epigenetic shifts during fruit transition (2 to 12 WPG Fruit) specifically target embryo and seed development (GO:0009790, GO:0009793, GO:0048316), matching the internal biological shifts of ripening tomato fruits preparing for seed dormancy.<br>
+<br>
+2) CHH context focuses on Membrane & Stress Signaling. CHH changes dynamically target cell surface signaling (plasma membrane and cell periphery) during fruit maturation, as well as broader stress responsiveness (cellular response to stimulus) during early tissue differentiation.<br>
+<br>
+3) CHG context didn't provide any significantly enriched pathways.<br>
 
-1) CpG context
-CpG Focuses on Seed/Embryo Maturation: The primary CpG epigenetic shifts during fruit transition (2 to 12 WPG Fruit) specifically target embryo and seed development (GO:0009790, GO:0009793, GO:0048316), matching the internal biological shifts of ripening tomato fruits preparing for seed dormancy.
-
-2) CHH context
-CHH Focuses on Membrane & Stress Signaling: CHH changes dynamically target cell surface signaling (plasma membrane and cell periphery) during fruit maturation, as well as broader stress responsiveness (cellular response to stimulus) during early tissue differentiation.
-
-# Genomic Feature Distribution
-
-Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff). Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 5 - 7.
-
+# Genomic Feature Distribution<br>
+<br>
+Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff). Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 5 - 7.<br>
+<br>
 ![Genomic feature distribution CpG](Images/Genomic_feature_distribution_CpG.png)
 
 **Figure 5: Genomic feature distribution for CpG context**
@@ -86,18 +87,15 @@ Genomic feature distribution of differentially methylated contexts comparing exp
 
 **Figure 7: Genomic feature distribution for CHH context**
 
-**Observation on genomic feature distribution**<br>
 <br>
-Ad 1) Intergenic Dominance Across All Contexts<br>
+
 Across CpG, CHG, and CHH DMR sets, intergenic sequences represent the largest single category, consistently capturing between 60 and 80% of all differentially methylated regions. This robust intergenic skew reflects large-scale developmental remodeling within transposon-rich and non-coding heterochromatic domains of the tomato genome.<br>
 <br>
-Ad 2) Non-CG (CHH and CHG) Enrichment in Repetitive Spaces <br>
 The CHH and CHG contexts exhibit a heavy restriction to intergenic spaces with minimal representation in coding exons (< 5%). This strongly conforms to canonical RNA-directed DNA methylation (RdDM) and CMT-mediated maintenance pathways, which target transposable elements and repetitive intergenic regions to maintain genome stability without disrupting protein-coding transcription.<br>
 <br>
-Ad 3) Gene-Body and Intronic Integration in CpG Methylation <br>
 In contrast to non-CG contexts, the CpG DMR distributions display a much higher relative abundance within intronic regions (~15-30%) and promoter zones (< 2kb). This structural partitioning matches the expected functional role of symmetrical CG methylation, which frequently populates gene bodies and regulatory interfaces to modulate transcriptional activity and alternative splicing during plant development.<br>
 <br>
-Ad 4) Developmental and Tissue-Specific Plasticity<br>
+
 The consistent proportional stability across leaf and fruit comparisons (both 2 vs. 12 WPG) demonstrates that while specific loci undergo targeted methylation changes during tissue maturation and organogenesis, the global genomic compartments targeted by epigenetic modifiers remain tightly conserved.<br>
 <br>
 # Transposable element Feature distribution<br>
