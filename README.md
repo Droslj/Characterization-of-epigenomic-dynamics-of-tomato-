@@ -75,6 +75,7 @@ CHG context didn't provide any significantly enriched pathways.<br>
 <br>
 Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff). Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 5 - 7.<br>
 <br>
+
 ![Genomic feature distribution CpG](Images/Genomic_feature_distribution_CpG.png)
 
 **Figure 5: Genomic feature distribution for CpG context**
@@ -89,7 +90,7 @@ Genomic feature distribution of differentially methylated contexts comparing exp
 
 <br>
 
-Across CpG, CHG, and CHH DMR sets, intergenic sequences represent the largest single category, consistently capturing between 60 and 80% of all differentially methylated regions. This robust intergenic skew reflects large-scale developmental remodeling within transposon-rich and non-coding heterochromatic domains of the tomato genome.<br>
+Across CpG, CHG, and CHH DMR sets, intergenic sequences represent the largest single category, capturing between 60 and 80% of all differentially methylated regions. This robust intergenic skew reflects large-scale developmental remodeling within transposon-rich and non-coding heterochromatic domains of the tomato genome.<br>
 <br>
 The CHH and CHG contexts exhibit a heavy restriction to intergenic spaces with minimal representation in coding exons (< 5%). This strongly conforms to canonical RNA-directed DNA methylation (RdDM) and CMT-mediated maintenance pathways, which target transposable elements and repetitive intergenic regions to maintain genome stability without disrupting protein-coding transcription.<br>
 <br>
@@ -98,6 +99,7 @@ In contrast to non-CG contexts, the CpG DMR distributions display a much higher 
 
 The consistent proportional stability across leaf and fruit comparisons (both 2 vs. 12 WPG) demonstrates that while specific loci undergo targeted methylation changes during tissue maturation and organogenesis, the global genomic compartments targeted by epigenetic modifiers remain tightly conserved.<br>
 <br>
+
 # Transposable element Feature distribution<br>
 <br>
 Similarly as with the genomic feature distribution, identified DMRs were mapped to genomic repeats by intersecting with REPET annotation (ITAG4.0_REPET_repeats_aggressive.gff). Spatial intersections were computed using bedtools intersect, capturing both direct physical overlaps (Distance = 0 bp) and proximal flanking relationships (up to 2000 bp upstream/downstream) for all three contexts. Transposons were classified into structural categories, including Class I LTR (Copia, Gypsy), Class I non-LTR (LINE, SINE), Class II (Helitron), Host Gene Exons/Fragments, and Unclassified / Degraded elements.<br>
