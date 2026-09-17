@@ -35,32 +35,40 @@ Upstream data processeing was done in usegalaxy platform. Upstream data processi
 
 [MultiQC after adapter trimming](https://droslj.github.io/Characterization-of-epigenomic-dynamics-of-tomato-/MultiQC_post_T.html)
 
-# Chromosomal DMR distribution map
+# Differential methylation analysis
 
-Chromosomal DMR distribution map for all three contexts is shown on Figures 2 - 4.
-<br>
+Calling differentially methylated regions (using metilene tool) identified DMRs for all relevant contexts (CpG, CHG and CHH). Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG)  Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.<br>
+
+## Chromosomal DMR distribution map
+
+Using results from previous step, Chromosomal DMR distribution map for all three contexts was extracted (Figures 2 - 4).
+
 ![Genome wide DMR distribution for CpG context](Images/CpG_DMR_Density_Composite_2x2.png)
+
 <br>
+
 **Figure 2: Genomic distribution map showing identified CpG counts across chromosomes for each developmental contrast**
 <br>
+
 ![Genome wide DMR distribution for CHG context](Images/CHG_DMR_Density_Composite_2x2.png)
+
 <br>
+
 **Figure 3: Genomic distribution map showing identified CHG DMR counts across chromosomes for each developmental contrast**
 <br>
+
 ![Genome wide DMR distribution for CHH context](Images/CHH_DMR_Density_Composite_2x2.png)
 <br>
 **Figure 4: Genomic distribution map showing identified CHH DMR counts across chromosomes for each developmental contrast**
 <br>
-
-# Differential methylation analysis
-Calling differentially methylated regions (using metilene tool) identified DMRs for all relevant contexts (CpG, CHG and CHH). Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01). Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.<br>
+<br>
 
 # Functional gene annotation
 <br>
 To determine the potential regulatory impact of epigenomic variations identified across Solanum lycopersicum tissues and developmental stages, differentially methylated regions (DMRs) across CpG, CHG, and CHH contexts were mapped against genomic feature annotations (ITAG4.0 gene models). Additionally, obtained genes were extracted for pathway enrichment (see following section). Only genes that fall within  promoter region (i.e. < 2000 b.p.) were retained.
 <br>
 
- ## Pathway enrichment
+## Pathway enrichment
  <br>
 Genes obtained in the previous step were extracted and used for pathway enrichment (gProfiler). Results obtained are summarized in the Table 1'
 <br>
