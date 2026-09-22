@@ -103,19 +103,19 @@ Genomic feature distribution of differentially methylated contexts comparing exp
 
 <br>
 
-**Overall observation**
+**Overall observation**<br>
 The distribution of genomic features shown in the images suggests a strong noncoding/intergenic bias in differentially methylated regions (DMRs), especially for CHG and CHH methylation. That pattern is biologically plausible in tomato because intergenic regions are rich in repetitive DNA and transposable elements, which are major targets of plant DNA-methylation pathways.
-
-**Intergenic enrichment**
+<br>
+**Intergenic enrichment**<br>
 Roughly 60–80% of DMRs fall in intergenic sequences. This is consistent with methylation changes occurring in transposon-rich or heterochromatic regions rather than primarily inside protein-coding exons.
-
-**CHG and CHH contexts**
+<br>
+**CHG and CHH contexts**<br>
 Their low representation in exons and stronger association with intergenic regions fits the expected behavior of non-CG methylation. CHH methylation is commonly associated with RNA-directed DNA methylation (RdDM) and transposon silencing, while CHG methylation is often maintained by CMT3-related pathways.
-
-**CpG context**
+<br>
+**CpG context**<br>
 The relatively greater representation of CpG DMRs in introns and promoter-proximal regions is also plausible. CpG methylation can occur within gene bodies and regulatory regions, where it may be associated with transcriptional regulation or, in some cases, alternative splicing.
-
-**Low exon overlap**
+<br>
+**Low exon overlap**<br>
 Fewer than 5% of CHG and CHH DMRs overlapping coding exons suggests that methylation remodeling may avoid directly altering protein-coding regions.
 
 # Transposable element Feature distribution<br>
@@ -133,17 +133,20 @@ Similarly as with the genomic feature distribution, identified DMRs were mapped 
 **Figure 9: Transposable feature content for CHH context**
 <br>
 
-**Observations**
+**Observations**<br>
 
-Both non-CG contexts (CHG and CHH) exhibit a heavy positional skew toward intergenic regions and promoter-proximal spaces, reflecting characteristic epigenetic targeting of non-coding and heterochromatic compartments.
-LTR Retrotransposon Enrichment
-DMRs in both CHG and CHH contexts are predominantly driven by Class I LTR retrotransposons, specifically balancing across Gypsy and Copia superfamilies. This aligns with canonical plant heterochromatin silencing models via CMT and RdDM pathways.
-Host Gene and Degraded Fraction Involvement 
-Substantial intersections with Host Gene / Exonic Fragments and Unclassified / Degraded repeat fractions highlight a complex overlap between transposable element insertions and gene-proximal regulatory regions.
+**CHH DMRs near LTRs and truncated/degraded repeats**<br>
+This is consistent with CHH methylation being involved in active or RNA-directed transposon surveillance. CHH methylation is often more dynamic than CG or CHG methylation, so it may respond strongly to BABA treatment or developmental changes.<br>
 
+**CHG DMRs distributed across several repeat categories** <br>
+The broader CHG distribution—including degraded repeats, Helitrons, and host-gene/exonic repeat fragments—suggests that CHG changes are not restricted to intact LTR elements. This could reflect maintenance or remodeling of methylation across older, fragmented, and gene-proximal repeats.<br>
 
-Quantification of DMR occurrences across REPET feature categories revealed distinct targeting preferences between cytosine contexts. While CHH DMRs preferentially localized near truncated remnants and LTR elements, CHG DMRs showed broader distribution across degraded repeat fragments, host gene exons, and Helitrons.
+**Copia and Gypsy representation** <br>
+Finding both LTR superfamilies is reasonable because they are abundant in plant genomes. However, their presence among DMRs does not by itself demonstrate preferential targeting. That conclusion depends on the whole-genome background enrichment analysis.<br>
 
+**Degraded or unclassified repeats**<br>
+These categories should not be dismissed as uninformative. They may represent old TE insertions that have accumulated mutations but retain regulatory or chromatin effects. However, they are also more vulnerable to annotation ambiguity and fragmented interval definitions.<br>
+<br>
 # Integration of Genomic Features and Transposable Elements
 
 Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_aggressive.gff repeat annotation files provides  DMR overlap across all transposable element superfamilies (Copia, Gypsy, Helitrons, LINEs, etc.) that were identified by the REPET pipeline. 
