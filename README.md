@@ -188,13 +188,10 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 **Observations**<br>
 
 **The Similarity: Copia vs. Gypsy (Class I LTR Retrotransposons)**
-The Pattern: Both behave similarly, showing strong non-CG enrichment.
-The Explanation: As the dominant, long terminal repeat (LTR) retrotransposon families making up the bulk of the tomato genome's repetitive landscape, both are primary targets for heavy heterochromatinization. 
-They rely heavily on self-reinforcing maintenance pathways (like CMT3 for CHG guided by H3K9me2) and peripheral RdDM targeting (for CHH) to prevent transposition.
+Both behave similarly, showing strong non-CG enrichment, especially CHG within gene bodies and CHH at gene boundaries. They represent dominant, long terminal repeat (LTR) retrotransposon families making up the bulk of the tomato genome's repetitive landscape, making them primary targets for methylation. They rely heavily on self-reinforcing maintenance pathways (like CMT3 for CHG guided by H3K9me2) and peripheral RdDM targeting (for CHH) to prevent transposition.
 
 **The Difference: Class I LINEs vs. LTR Retrotransposons**
-The Pattern: LINEs behave in the opposite fashion to LTR elements.
-The Explanation: Long Interspersed Nuclear Elements (LINEs) have different genomic distributions, often residing closer to or within lower-density heterochromatic corridors compared to massive LTR blocks. Their distinct transcriptional dynamics and transcription-coupled chromatin states change how maintenance methyltransferases access them, resulting in an inverse enrichment profile relative to LTR elements.
+LINEs behave in the opposite fashion to LTR elements. Long Interspersed Nuclear Elements (LINEs) have different genomic distributions, often residing closer to or within lower-density heterochromatic corridors compared to massive LTR blocks. Their distinct transcriptional dynamics and transcription-coupled chromatin states change how maintenance methyltransferases access them, resulting in an inverse enrichment profile relative to LTR elements.
 
 **The Difference: Helitrons (Rolling-Circle Transposons)**
 The Pattern: Helitrons show unique behavior contrasting with standard retrotransposons.
