@@ -139,7 +139,7 @@ Similarly as with the genomic feature distribution, identified DMRs were mapped 
 This is consistent with CHH methylation being involved in active or RNA-directed transposon surveillance. CHH methylation is often more dynamic than CG or CHG methylation, so it may respond strongly to BABA treatment or developmental changes.<br>
 
 **CHG DMRs distributed across several repeat categories** <br>
-The broader CHG distribution—including degraded repeats, Helitrons, and host-gene/exonic repeat fragments—suggests that CHG changes are not restricted to intact LTR elements. This could reflect maintenance or remodeling of methylation across older, fragmented, and gene-proximal repeats.<br>
+The broader CHG distribution including degraded repeats, Helitrons, and host-gene/exonic repeat fragments suggests that CHG changes are not restricted to intact LTR elements. This could reflect maintenance or remodeling of methylation across older, fragmented, and gene-proximal repeats.<br>
 
 **Copia and Gypsy representation** <br>
 Finding both LTR superfamilies is reasonable because they are abundant in plant genomes. However, their presence among DMRs does not by itself demonstrate preferential targeting. That conclusion depends on the whole-genome background enrichment analysis.<br>
@@ -147,6 +147,7 @@ Finding both LTR superfamilies is reasonable because they are abundant in plant 
 **Degraded or unclassified repeats**<br>
 These categories should not be dismissed as uninformative. They may represent old TE insertions that have accumulated mutations but retain regulatory or chromatin effects. However, they are also more vulnerable to annotation ambiguity and fragmented interval definitions.<br>
 <br>
+
 # Integration of Genomic Features and Transposable Elements
 
 Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_aggressive.gff repeat annotation files provides  DMR overlap across all transposable element superfamilies (Copia, Gypsy, Helitrons, LINEs, etc.) that were identified by the REPET pipeline. 
@@ -159,7 +160,6 @@ Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_
 
 **Figure 11: DMR Distribution Across REPET Categories for CHH context**
 
-
 # Whole-Genome Background Enrichment Analysis
 
 To determine whether dynamic methylation non-randomly targets specific repeat families, hypergeometric enrichment testing was conducted against the whole-genome REPET background. Observed DMR counts per TE category were compared against total genome-wide REPET feature frequencies. This step established statistically significant enrichment (p < 0.05) for truncated/degraded repeat fragments and specific LTR subfamilies relative to background genomic expectations.
@@ -171,7 +171,6 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 ![Whole genome background enrichment - CHH context](Images/BG_enrichment_CHH.png)
 
 **Figure 13: Whole genome background enrichment (CHH context)**
-
 
 # Spatial Metaplot Analysis Around 5' TE Boundaries
 
@@ -186,12 +185,11 @@ To maintain biological orientation across both forward (+) and reverse (-) stran
 
 **Figure 15: Spatial metaplot (CHH context)**
 
-
-Under this framework:
-Negative distances (-1000 to -1 bp): Represent the 5' euchromatic outer flank (5' promoter-proximal region).
-Zero (0 bp): Represents the physical insertion boundary
-Positive distances (+1 to +2000 bp): Represent internal regions within the TE body
-Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp u)
+**Note**
+Negative distances (-1000 to -1 bp) represent the 5' euchromatic outer flank (5' promoter-proximal region).
+Zero (0 bp) represents the physical insertion boundary
+Positive distances (+1 to +2000 bp) represent internal regions within the TE body
+Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp
 
 **References**
 [1] Developmentally regulated generation of a systemic signal for long-lasting defence priming in tomato [WGBS], Project PRJNA1144133, NCBI (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1144133)
