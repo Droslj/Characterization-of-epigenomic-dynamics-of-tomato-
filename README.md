@@ -227,6 +227,18 @@ The "Internal" Nature of Helitron Activity: Helitrons are notorious for insertin
 
 This clean separation—CHG capturing the temporal/developmental tightening of these elements, and CHH reflecting a lack of boundary-level small RNA stress—gives you a very cohesive story for your Helitron population!
 
+**HOST/EXON fragments**
+
+1. Why CHG is Present (Bulk Heterochromatin & Maintenance)
+The Legacy of Transposon Capture: Host-gene exon fragments found outside of normal gene contexts are frequently the result of past Helitron-mediated exon transduction or ancient, degenerated transposable element insertions.
+
+The CMT3-H3K9me2 Maintenance Loop: Once these fragments are trapped inside or adjacent to repetitive DNA, they are treated by the cell as part of the repeat machinery. They become blanketed by the CHG methylation pathway, which is maintained by CMT3 in a self-reinforcing loop with H3K9me2 histone modifications. This systemic, maintenance-driven CHG methylation covers the entire body of the older repeat or captured fragment, independent of active transcription.
+
+2. Why CHH is Virtually Absent (The "Edge-Only" Rule of RdDM)
+Asymmetric CHH Requires Boundaries: CHH methylation in plants is heavily dictated by the RdDM (RNA-directed DNA methylation) pathway. RdDM does not efficiently target the deep interiors of long, established repeats or trapped fragments. Instead, it is an edge-driven phenomenon that focuses heavily on the borders where open euchromatin meets closed heterochromatin.
+
+Lack of Small RNA Signatures: Because host-gene exon fragments embedded within repeats are usually locked down by maintenance machinery rather than undergoing fresh, boundary-driven small-RNA invasion, they completely lack the localized small-RNA flux needed to recruit de novo CHH methyltransferases (like DRM2).
+
 # Spatial Metaplot Analysis Around 5' TE Boundaries
 
 To resolve the precise spatial targeting of methylation relative to transposon architecture, distance vectors were computed from each DMR center to the 5' insertion edge of the nearest TE.
