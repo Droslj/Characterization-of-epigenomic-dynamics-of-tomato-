@@ -8,7 +8,7 @@ DNA methylation, Whole genome bisulfite sequencing (WGBS), Methylation contexts 
 **Objective(s)**
 
 To characterize the epigenomic dynamics of tomato (Solanum lycopersicum) during fruit development and tissue differentiation, I created a comlete, strand-aware spatial methylome profiling pipeline. This workflow integrates differentially methylated regions (DMRs) in both CHH and CHG sequence contexts with transposable element (TE) structural annotations from the REPET database. The complete analysis quantifies family-specific TE targeting, genome-wide enrichment relative to background repeat abundance, and fine-scale spatial distribution relative to 5' transposon boundaries.
-THe data was taken from the following study [1].
+The data was taken from the following study [1].
 
 # Experimental setup
 
@@ -37,7 +37,7 @@ Upstream data processeing was done in usegalaxy platform. Upstream data processi
 
 # Differential methylation analysis
 
-Calling differentially methylated regions (using metilene tool) identified DMRs for all relevant contexts (CpG, CHG and CHH). Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG)  Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.<br>
+Calling differentially methylated regions (using metilene tool) identified DMRs for all relevant contexts (CpG, CHG and CHH). Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG). Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.<br>
 
 ## Chromosomal DMR distribution map
 
@@ -84,9 +84,9 @@ CHH context focuses on Membrane & Stress Signaling. CHH changes dynamically targ
 <br>
 CHG context didn't provide any significantly enriched pathways.<br>
 <br>
-# Genomic Feature Distribution<br>
+# Genomic Feature Annotation and Distribution<br>
 <br>
-Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff).Spatial intersections were computed using bedtools intersect, capturing both direct physical overlaps (Distance = 0 bp) and proximal flanking relationships (up to 2000 bp upstream/downstream) for all three contexts Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 5 - 7.<br>
+Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff). Spatial intersections were computed using bedtools intersect, capturing both direct physical overlaps (Distance = 0 bp) and proximal flanking relationships (up to 2000 bp upstream/downstream) for all three contexts Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 5 - 7.<br>
 <br>
 
 ![Genomic feature distribution CpG](Images/Genomic_feature_distribution_CpG.png)
@@ -103,7 +103,9 @@ Genomic feature distribution of differentially methylated contexts comparing exp
 
 <br>
 
-**Overall observation**<br>
+**Observations**<br>
+
+**Overall observation**br>
 The distribution of genomic features shown in the images suggests a strong noncoding/intergenic bias in differentially methylated regions (DMRs), especially for CHG and CHH methylation. That pattern is biologically plausible in tomato because intergenic regions are rich in repetitive DNA and transposable elements, which are major targets of plant DNA-methylation pathways. <br>
 
 **Intergenic enrichment**<br>
@@ -118,7 +120,8 @@ The relatively greater representation of CpG DMRs in introns and promoter-proxim
 **Low exon overlap**<br>
 Fewer than 5% of CHG and CHH DMRs overlapping coding exons suggests that methylation remodeling may avoid directly altering protein-coding regions.<br>
 <br>
-# Transposable element Feature distribution<br>
+
+# Transposable element Feature Annotation and distribution<br>
 <br>
 Similarly as with the genomic feature distribution, identified DMRs were mapped to genomic repeats by intersecting with REPET annotation (ITAG4.0_REPET_repeats_aggressive.gff). Transposons were classified into structural categories, including Class I LTR (Copia, Gypsy), Class I non-LTR (LINE, SINE), Class II (Helitron), Host Gene Exons/Fragments, and Unclassified / Degraded elements.<br>
 <br>
@@ -126,7 +129,6 @@ Similarly as with the genomic feature distribution, identified DMRs were mapped 
 ![TE features](Images/Transposable_feature_distribution_CHG.png)
 
 **Figure 8: Transposable feature content for CHG context**
-
 
 ![TE features](Images/Transposable_feature_distribution_CHH.png)
 
@@ -136,7 +138,7 @@ Similarly as with the genomic feature distribution, identified DMRs were mapped 
 **Observations**<br>
 
 **CHH DMRs near LTRs and truncated/degraded repeats**<br>
-This is consistent with CHH methylation being involved in active or RNA-directed transposon surveillance. CHH methylation is often more dynamic than CG or CHG methylation, so it may respond strongly to BABA treatment or developmental changes.<br>
+This is consistent with CHH methylation being involved in active or RNA-directed transposon control. CHH methylation is more dynamic than CHG methylation, so it may respond strongly to BABA treatment or developmental changes.<br>
 
 **CHG DMRs distributed across several repeat categories** <br>
 The broader CHG distribution including degraded repeats, Helitrons, and host-gene/exonic repeat fragments suggests that CHG changes are not restricted to intact LTR elements. This could reflect maintenance or remodeling of methylation across older, fragmented, and gene-proximal repeats.<br>
