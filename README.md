@@ -105,7 +105,7 @@ Genomic feature distribution of differentially methylated contexts comparing exp
 
 **Observations**<br>
 
-**Overall observation**br>
+**Overall observation**<br>
 The distribution of genomic features shown in the images suggests a strong noncoding/intergenic bias in differentially methylated regions (DMRs), especially for CHG and CHH methylation. That pattern is biologically plausible in tomato because intergenic regions are rich in repetitive DNA and transposable elements, which are major targets of plant DNA-methylation pathways. <br>
 
 **Intergenic enrichment**<br>
