@@ -162,6 +162,17 @@ Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_
 
 **Figure 11: DMR Distribution Across REPET Categories for CHH context**
 
+**Observations**
+
+**Non-CG Enrichment at Repeats and Intergenic Regions**
+CHG and CHH DMRs heavily skew toward transposable elements and intergenic spaces, reflecting active, localized maintenance of heterochromatic silencing and repeat suppression via the RNA-directed DNA methylation (RdDM) pathway.
+
+**Proximity at Gene-TE Boundaries**
+The distance filter (< 2,000 bp upstream and gene bodies) reveals that a targeted subset of non-CG DMRs localizes to repetitive elements situated within proximal promoter regions or long introns.
+
+**Superfamily Target Profiles**
+Across the analyzed transposable element intersections, LTR retrotransposons (predominantly Copia and Gypsy superfamilies) capture the majority of non-CG differential methylation events.
+
 # Whole-Genome Background Enrichment Analysis
 
 To determine whether dynamic methylation non-randomly targets specific repeat families, hypergeometric enrichment testing was conducted against the whole-genome REPET background. Observed DMR counts per TE category were compared against total genome-wide REPET feature frequencies. This step established statistically significant enrichment (p < 0.05) for truncated/degraded repeat fragments and specific LTR subfamilies relative to background genomic expectations.
