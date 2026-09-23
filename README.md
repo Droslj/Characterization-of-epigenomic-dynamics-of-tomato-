@@ -187,18 +187,26 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 
 **Observations**<br>
 
-<br>
+**The Similarity: Copia vs. Gypsy (Class I LTR Retrotransposons)**
+The Pattern: Both behave similarly, showing strong non-CG enrichment.
+The Explanation: As the dominant, long terminal repeat (LTR) retrotransposon families making up the bulk of the tomato genome's repetitive landscape, both are primary targets for heavy heterochromatinization. 
+They rely heavily on self-reinforcing maintenance pathways (like CMT3 for CHG guided by H3K9me2) and peripheral RdDM targeting (for CHH) to prevent transposition.
 
-**Statistical Over-Representation vs. Abundance**<br>
-Hypergeometric testing confirms whether specific transposable element superfamilies are disproportionately targeted by non-CG differential methylation relative to their baseline abundance in the entire ITAG4.0 genome-wide repeat catalog, distinguishing true biological enrichment from background genomic density.<br>
+**The Difference: Class I LINEs vs. LTR Retrotransposons**
+The Pattern: LINEs behave in the opposite fashion to LTR elements.
+The Explanation: Long Interspersed Nuclear Elements (LINEs) have different genomic distributions, often residing closer to or within lower-density heterochromatic corridors compared to massive LTR blocks. Their distinct transcriptional dynamics and transcription-coupled chromatin states change how maintenance methyltransferases access them, resulting in an inverse enrichment profile relative to LTR elements.
 
-**Context-Specific Enrichment Patterns**<br>
-CHH DMRs show significant statistical enrichment at specific repeat boundaries and Class II DNA transposons (such as MITEs), highlighting active targeting by the RdDM pathway at euchromatic-heterochromatic borders.<br>
+**The Difference: Helitrons (Rolling-Circle Transposons)**
+The Pattern: Helitrons show unique behavior contrasting with standard retrotransposons.
+The Explanation: Helitrons replicate via a rolling-circle mechanism and frequently capture gene fragments, often residing in closer proximity to gene-rich euchromatic regions. Because of their structural dynamics and tendency to nest near genes, they are under different regulatory constraints than pericentromeric LTRs, leading to specialized non-CG targeting.
 
-CHG DMRs demonstrate pronounced enrichment within internal regions of Class I LTR retrotransposons (Gypsy and Copia), reflecting persistent maintenance methylation in pericentromeric heterochromatin.<br>
-<br>
-**Functional Boundary Guardrails**<br>
-The enrichment profile indicates that non-CG methylation is not randomly scattered across repetitive elements; rather, it is statistically constrained to specific structural superfamilies, pointing toward controlled epigenetic safeguarding mechanisms that prevent aberrant spreading into nearby functional genes.<br>
+**The Difference: Host Gene Exon Fragments (CHG vs. CHH)**
+The Pattern: Clearly observable in CHG, but nearly absent in CHH.
+The Explanation: CHG methylation in plants is predominantly maintained by CMT3, which physically interacts with histone H3K9 dimethylation (H3K9me2). H3K9me2 and CMT3 often intrude into transcribed gene bodies or internal exons (so-called gene-body methylation or gbM-like behavior, though non-CG can occur in repeats trapped inside introns/exons). Conversely, CHH methylation is strictly enforced by the de novo RdDM pathway, which is actively excluded from functional gene bodies to prevent accidental silencing of host genes. Therefore, ancient repeat or exon fragments trapped inside genes will show CHG maintenance signals via histone cross-talk, while being actively shielded from CHH deposition.
+
+**The Similarity: Unclassified / Degraded Elements**
+The Pattern: Unclassified or degraded repeats behave similarly in both contexts.
+The Explanation: Heavily truncated, ancient, or mutated repeat fragments ("fossils") have lost their specific sequence features that recruit specialized defense proteins. Lacking active structural signals, they tend to drift into a baseline, uniform level of passive methylation maintenance or passive loss across both contexts.
 
 
 # Spatial Metaplot Analysis Around 5' TE Boundaries
