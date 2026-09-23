@@ -185,6 +185,22 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 
 **Figure 13: Whole genome background enrichment (CHH context)**
 
+**Observations**<br>
+
+<br>
+
+**Statistical Over-Representation vs. Abundance**<br>
+Hypergeometric testing confirms whether specific transposable element superfamilies are disproportionately targeted by non-CG differential methylation relative to their baseline abundance in the entire ITAG4.0 genome-wide repeat catalog, distinguishing true biological enrichment from background genomic density.<br>
+
+**Context-Specific Enrichment Patterns**<br>
+CHH DMRs show significant statistical enrichment at specific repeat boundaries and Class II DNA transposons (such as MITEs), highlighting active targeting by the RdDM pathway at euchromatic-heterochromatic borders.<br>
+
+CHG DMRs demonstrate pronounced enrichment within internal regions of Class I LTR retrotransposons (Gypsy and Copia), reflecting persistent maintenance methylation in pericentromeric heterochromatin.<br>
+<br>
+**Functional Boundary Guardrails**<br>
+The enrichment profile indicates that non-CG methylation is not randomly scattered across repetitive elements; rather, it is statistically constrained to specific structural superfamilies, pointing toward controlled epigenetic safeguarding mechanisms that prevent aberrant spreading into nearby functional genes.<br>
+
+
 # Spatial Metaplot Analysis Around 5' TE Boundaries
 
 To resolve the precise spatial targeting of methylation relative to transposon architecture, distance vectors were computed from each DMR center to the 5' insertion edge of the nearest TE.
