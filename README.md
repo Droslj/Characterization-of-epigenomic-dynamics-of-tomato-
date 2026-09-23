@@ -14,7 +14,7 @@ The data was taken from the following study [1].
 
 Investigation of DNA methylation profile of leaves and fruits of Solanum lycopersicum, from plants exposed to ß-aminobutyric (BABA) at two different developmental stages (2 weeks post germination, 12 weeks pst germination) or treated with water (control).
 
-# Bioinformatics processing Pipeline**
+# Bioinformatics processing Pipeline
 
 The complete bioinformatics processing pipeline is shown on Figure 1. Complete flow was done in several phases, described in subsequent sections.
 
