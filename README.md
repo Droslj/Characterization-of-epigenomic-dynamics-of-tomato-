@@ -187,23 +187,20 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 
 **Observations**<br>
 
-**The Similarity: Copia vs. Gypsy (Class I LTR Retrotransposons)**
-Both behave similarly, showing strong non-CG enrichment, especially CHG within gene bodies and CHH at gene boundaries. They represent dominant, long terminal repeat (LTR) retrotransposon families making up the bulk of the tomato genome's repetitive landscape, making them primary targets for methylation. They rely heavily on self-reinforcing maintenance pathways (like CMT3 for CHG guided by H3K9me2) and peripheral RdDM targeting (for CHH) to prevent transposition.
+**Copia (Enriched) vs. Gypsy (Depleted) in DMRs**
+Even though both are Class I LTR retrotransposons, their differential methylation (DMR) behavior often comes down to evolutionary age, genomic positioning, and saturation:
 
-**The Difference: Class I LINEs vs. LTR Retrotransposons**
-LINEs behave in the opposite fashion to LTR elements. Long Interspersed Nuclear Elements (LINEs) have different genomic distributions, often residing closer to or within lower-density heterochromatic corridors compared to massive LTR blocks. Their distinct transcriptional dynamics and transcription-coupled chromatin states change how maintenance methyltransferases access them, resulting in an inverse enrichment profile relative to LTR elements.
+Gypsy Elements (Static / Saturated): Gypsy elements in plant genomes (like tomato) tend to be massive, ancient, and concentrated into dense pericentromeric blocks. Because they have been locked down for millions of years, they are constitutively and densely hypermethylated across the board. They are so thoroughly silenced that they rarely change their methylation state under normal developmental or environmental shifts. Consequently, they don't show up often in differential methylation analyses because they never switch—they appear "depleted" in DMRs simply because they are permanently static.
 
-**The Difference: Helitrons (Rolling-Circle Transposons)**
-The Pattern: Helitrons show unique behavior contrasting with standard retrotransposons.
-The Explanation: Helitrons replicate via a rolling-circle mechanism and frequently capture gene fragments, often residing in closer proximity to gene-rich euchromatic regions. Because of their structural dynamics and tendency to nest near genes, they are under different regulatory constraints than pericentromeric LTRs, leading to specialized non-CG targeting.
+Copia Elements (Dynamic / Transitional): Copia families, on average, tend to be younger, more transcriptionally active, or located closer to euchromatic-heterochromatic boundaries. Because they sit in these transitional zones, they are much more susceptible to dynamic gains or losses of methylation in response to stress or development, making them heavily enriched in DMR sets.
 
-**The Difference: Host Gene Exon Fragments (CHG vs. CHH)**
-The Pattern: Clearly observable in CHG, but nearly absent in CHH.
-The Explanation: CHG methylation in plants is predominantly maintained by CMT3, which physically interacts with histone H3K9 dimethylation (H3K9me2). H3K9me2 and CMT3 often intrude into transcribed gene bodies or internal exons (so-called gene-body methylation or gbM-like behavior, though non-CG can occur in repeats trapped inside introns/exons). Conversely, CHH methylation is strictly enforced by the de novo RdDM pathway, which is actively excluded from functional gene bodies to prevent accidental silencing of host genes. Therefore, ancient repeat or exon fragments trapped inside genes will show CHG maintenance signals via histone cross-talk, while being actively shielded from CHH deposition.
+**LINEs: Enriched in CHG, Depleted in CHH**
+The inverse pattern for LINEs (enriched in CHG maintenance, depleted in asymmetric CHH) points to how non-LTR elements interact with specific plant methylation pathways:
 
-**The Similarity: Unclassified / Degraded Elements**
-The Pattern: Unclassified or degraded repeats behave similarly in both contexts.
-The Explanation: Heavily truncated, ancient, or mutated repeat fragments ("fossils") have lost their specific sequence features that recruit specialized defense proteins. Lacking active structural signals, they tend to drift into a baseline, uniform level of passive methylation maintenance or passive loss across both contexts.
+Why CHG Enrichment? CHG methylation in plants is tightly maintained by CMT3 in a self-reinforcing loop with H3K9me2 histone marks. If LINE elements reside in chromatin compartments where this maintenance loop is actively operating, they will stably accumulate and maintain high levels of CHG methylation as part of standard transposon gene-body silencing.
+
+Why CHH Depletion? CHH methylation is predominantly driven by RdDM (RNA-directed DNA methylation), which heavily targets the edges and boundaries of repeats where small RNAs are generated. If the LINE elements in your annotation are positioned away from active boundaries (e.g., deeply embedded or structurally isolated), they bypass the intense small-RNA surveillance that drives sharp CHH enrichment peaks.
+
 
 
 # Spatial Metaplot Analysis Around 5' TE Boundaries
