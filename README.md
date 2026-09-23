@@ -239,6 +239,16 @@ Asymmetric CHH Requires Boundaries: CHH methylation in plants is heavily dictate
 
 Lack of Small RNA Signatures: Because host-gene exon fragments embedded within repeats are usually locked down by maintenance machinery rather than undergoing fresh, boundary-driven small-RNA invasion, they completely lack the localized small-RNA flux needed to recruit de novo CHH methyltransferases (like DRM2).
 
+**What Are Unclassified / Degraded Repeats**
+Over millions of years, plant genomes (especially large ones like tomato) accumulate massive amounts of ancient, truncated, and heavily mutated transposable element debris. When elements break down so much that sequence homology tools (like REPET) can no longer match them to a clean family like Gypsy, Copia, or CACTA, they fall into this "unclassified" bin.
+
+2. Why Are They High in Both CHG and CHH Contexts?
+The "Garbage Collection" of Genome Defense: Because these fragments are still fundamentally repetitive DNA, the plant's epigenetic surveillance systems don't care that they are broken or unnamable. They are recognized simply as "foreign/repetitive" and subjected to default, heavy-handed silencing.
+
+A Uniform Background Signal: Unlike active or semi-autonomous families (like Helitrons or SINEs) that have specific regulatory quirks, degraded repeats are scattered randomly everywhere. Consequently, they absorb a broad, non-specific background of both CMT3-driven CHG maintenance and RdDM-driven CHH surveillance, making their profile look remarkably even across different contexts and comparisons.
+
+Essentially, they act as the baseline "noise" of the genome's repetitive landscape—massive in volume, broadly methylated on all fronts, and serving as a stable background against which your more dynamic, specific element classes (like the Helitron and SINE shifts) stand out!
+
 # Spatial Metaplot Analysis Around 5' TE Boundaries
 
 To resolve the precise spatial targeting of methylation relative to transposon architecture, distance vectors were computed from each DMR center to the 5' insertion edge of the nearest TE.
