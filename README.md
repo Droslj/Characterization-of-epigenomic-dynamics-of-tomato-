@@ -215,6 +215,17 @@ A True Developmental Window (2 WPG Divergence): If it is biological, 2 WPG repre
 
 Given how small the SINE pool usually is, it is very likely a combination of both: the low count makes them prone to fluctuation, but the 2 WPG contrast captures a unique window of maximum tissue-type divergence.
 
+**Why Helitrons Favor CHG Maintenance (Enriched in 2 vs. 12 WPG Timepoints)**
+Replication and Intragenic Niche: Helitrons replicate via a rolling-circle mechanism and have a unique habit of capturing gene fragments and nesting inside or very close to gene bodies.
+
+Developmental Repression Over Time: The 2 vs. 12 WPG contrasts capture developmental progression (early juvenile/fruit-set vs. mature sink/source stages). During plant maturation and aging, stable gene-body or proximal repeats often undergo sustained maintenance methylation via the CMT3-H3K9me2 pathway (CHG) to keep them securely locked down as transcriptional profiles stabilize. Because Helitrons are frequently caught in the act of altering gene proximity or capturing sequences, they become hotspots for dynamic CHG modulation specifically when comparing developmental time points.
+
+2. Why They Are Simultaneously Depleted in CHH in Those Same Contrasts
+Avoidance of Active RdDM Boundaries: CHH methylation is governed by the RdDM pathway, which targets edge-delimited, small-RNA-producing heterochromatic boundaries.
+
+The "Internal" Nature of Helitron Activity: Helitrons are notorious for inserting themselves inside genes or low-copy regions where heavy small-RNA-generating machinery (RdDM/CHH) is actively suppressed to prevent collateral damage to the host gene. When you look at differential dynamics across time points (2 vs. 12 WPG), the changes happening to Helitrons are predominantly driven by internal maintenance mechanisms (CHG) rather than fresh boundary-invasion events (CHH). Consequently, while CHG shifts highlight their developmental regulation, CHH remains conspicuously absent or depleted because they avoid active RdDM fronts.
+
+This clean separation—CHG capturing the temporal/developmental tightening of these elements, and CHH reflecting a lack of boundary-level small RNA stress—gives you a very cohesive story for your Helitron population!
 
 # Spatial Metaplot Analysis Around 5' TE Boundaries
 
