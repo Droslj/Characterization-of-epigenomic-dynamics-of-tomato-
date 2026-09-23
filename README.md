@@ -201,6 +201,19 @@ Why CHG Enrichment? CHG methylation in plants is tightly maintained by CMT3 in a
 
 Why CHH Depletion? CHH methylation is predominantly driven by RdDM (RNA-directed DNA methylation), which heavily targets the edges and boundaries of repeats where small RNAs are generated. If the LINE elements in your annotation are positioned away from active boundaries (e.g., deeply embedded or structurally isolated), they bypass the intense small-RNA surveillance that drives sharp CHH enrichment peaks.
 
+**Why SINEs Favor CHH Universally**
+Euchromatic Proximity: SINEs (Short Interspersed Nuclear Elements) are short, tRNA-derived elements that typically insert themselves into gene-rich, euchromatic regions rather than deep heterochromatic deserts.
+
+Constant RdDM Surveillance: Because they sit close to genes and active transcription units, they are continuously monitored by the RdDM pathway (RNA-directed DNA methylation), which targets short, accessible repeats and maintains a steady baseline of asymmetric CHH methylation across all developmental states and tissue comparisons.
+
+2. Is the CHG Appearance at 2 WPG Real or an Artifact?
+SINEs have a much lower total copy number and genomic footprint in plants compared to massive LTR retrotransposons like Gypsy or Copia. This low abundance makes them uniquely sensitive to both biological and statistical factors:
+
+The Low-Count / Sample Size Effect (Statistical Noise): Because the absolute number of SINE-associated DMRs is small, a minor shift in a handful of elements can artificially push a category past a significance threshold in one specific contrast. When sample sizes are small, sporadic signals are common.
+
+A True Developmental Window (2 WPG Divergence): If it is biological, 2 WPG represents a critical juncture of rapid tissue divergence where vegetative (leaves) and reproductive (fruit) programs are branching sharply. Transient, highly specific shifts in CMT3/CHG maintenance can occur during early developmental transitions when chromatin states are being actively re-patterned.
+
+Given how small the SINE pool usually is, it is very likely a combination of both: the low count makes them prone to fluctuation, but the 2 WPG contrast captures a unique window of maximum tissue-type divergence.
 
 
 # Spatial Metaplot Analysis Around 5' TE Boundaries
