@@ -187,67 +187,11 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 
 **Observations**<br>
 
-**Copia (Enriched) vs. Gypsy (Depleted) in DMRs**
-Even though both are Class I LTR retrotransposons, their differential methylation (DMR) behavior often comes down to evolutionary age, genomic positioning, and saturation:
+Observations are summarized in Table 2
 
-Gypsy Elements (Static / Saturated): Gypsy elements in plant genomes (like tomato) tend to be massive, ancient, and concentrated into dense pericentromeric blocks. Because they have been locked down for millions of years, they are constitutively and densely hypermethylated across the board. They are so thoroughly silenced that they rarely change their methylation state under normal developmental or environmental shifts. Consequently, they don't show up often in differential methylation analyses because they never switch—they appear "depleted" in DMRs simply because they are permanently static.
+![Background enrichment - summary](Bakcground_enrichment.png)
 
-Copia Elements (Dynamic / Transitional): Copia families, on average, tend to be younger, more transcriptionally active, or located closer to euchromatic-heterochromatic boundaries. Because they sit in these transitional zones, they are much more susceptible to dynamic gains or losses of methylation in response to stress or development, making them heavily enriched in DMR sets.
-
-**LINEs: Enriched in CHG, Depleted in CHH**
-The inverse pattern for LINEs (enriched in CHG maintenance, depleted in asymmetric CHH) points to how non-LTR elements interact with specific plant methylation pathways:
-
-Why CHG Enrichment? CHG methylation in plants is tightly maintained by CMT3 in a self-reinforcing loop with H3K9me2 histone marks. If LINE elements reside in chromatin compartments where this maintenance loop is actively operating, they will stably accumulate and maintain high levels of CHG methylation as part of standard transposon gene-body silencing.
-
-Why CHH Depletion? CHH methylation is predominantly driven by RdDM (RNA-directed DNA methylation), which heavily targets the edges and boundaries of repeats where small RNAs are generated. If the LINE elements in your annotation are positioned away from active boundaries (e.g., deeply embedded or structurally isolated), they bypass the intense small-RNA surveillance that drives sharp CHH enrichment peaks.
-
-**Why SINEs Favor CHH Universally**
-Euchromatic Proximity: SINEs (Short Interspersed Nuclear Elements) are short, tRNA-derived elements that typically insert themselves into gene-rich, euchromatic regions rather than deep heterochromatic deserts.
-
-Constant RdDM Surveillance: Because they sit close to genes and active transcription units, they are continuously monitored by the RdDM pathway (RNA-directed DNA methylation), which targets short, accessible repeats and maintains a steady baseline of asymmetric CHH methylation across all developmental states and tissue comparisons.
-
-2. Is the CHG Appearance at 2 WPG Real or an Artifact?
-SINEs have a much lower total copy number and genomic footprint in plants compared to massive LTR retrotransposons like Gypsy or Copia. This low abundance makes them uniquely sensitive to both biological and statistical factors:
-
-The Low-Count / Sample Size Effect (Statistical Noise): Because the absolute number of SINE-associated DMRs is small, a minor shift in a handful of elements can artificially push a category past a significance threshold in one specific contrast. When sample sizes are small, sporadic signals are common.
-
-A True Developmental Window (2 WPG Divergence): If it is biological, 2 WPG represents a critical juncture of rapid tissue divergence where vegetative (leaves) and reproductive (fruit) programs are branching sharply. Transient, highly specific shifts in CMT3/CHG maintenance can occur during early developmental transitions when chromatin states are being actively re-patterned.
-
-Given how small the SINE pool usually is, it is very likely a combination of both: the low count makes them prone to fluctuation, but the 2 WPG contrast captures a unique window of maximum tissue-type divergence.
-
-**Why Helitrons Favor CHG Maintenance (Enriched in 2 vs. 12 WPG Timepoints)**
-Replication and Intragenic Niche: Helitrons replicate via a rolling-circle mechanism and have a unique habit of capturing gene fragments and nesting inside or very close to gene bodies.
-
-Developmental Repression Over Time: The 2 vs. 12 WPG contrasts capture developmental progression (early juvenile/fruit-set vs. mature sink/source stages). During plant maturation and aging, stable gene-body or proximal repeats often undergo sustained maintenance methylation via the CMT3-H3K9me2 pathway (CHG) to keep them securely locked down as transcriptional profiles stabilize. Because Helitrons are frequently caught in the act of altering gene proximity or capturing sequences, they become hotspots for dynamic CHG modulation specifically when comparing developmental time points.
-
-2. Why They Are Simultaneously Depleted in CHH in Those Same Contrasts
-Avoidance of Active RdDM Boundaries: CHH methylation is governed by the RdDM pathway, which targets edge-delimited, small-RNA-producing heterochromatic boundaries.
-
-The "Internal" Nature of Helitron Activity: Helitrons are notorious for inserting themselves inside genes or low-copy regions where heavy small-RNA-generating machinery (RdDM/CHH) is actively suppressed to prevent collateral damage to the host gene. When you look at differential dynamics across time points (2 vs. 12 WPG), the changes happening to Helitrons are predominantly driven by internal maintenance mechanisms (CHG) rather than fresh boundary-invasion events (CHH). Consequently, while CHG shifts highlight their developmental regulation, CHH remains conspicuously absent or depleted because they avoid active RdDM fronts.
-
-This clean separation—CHG capturing the temporal/developmental tightening of these elements, and CHH reflecting a lack of boundary-level small RNA stress—gives you a very cohesive story for your Helitron population!
-
-**HOST/EXON fragments**
-
-1. Why CHG is Present (Bulk Heterochromatin & Maintenance)
-The Legacy of Transposon Capture: Host-gene exon fragments found outside of normal gene contexts are frequently the result of past Helitron-mediated exon transduction or ancient, degenerated transposable element insertions.
-
-The CMT3-H3K9me2 Maintenance Loop: Once these fragments are trapped inside or adjacent to repetitive DNA, they are treated by the cell as part of the repeat machinery. They become blanketed by the CHG methylation pathway, which is maintained by CMT3 in a self-reinforcing loop with H3K9me2 histone modifications. This systemic, maintenance-driven CHG methylation covers the entire body of the older repeat or captured fragment, independent of active transcription.
-
-2. Why CHH is Virtually Absent (The "Edge-Only" Rule of RdDM)
-Asymmetric CHH Requires Boundaries: CHH methylation in plants is heavily dictated by the RdDM (RNA-directed DNA methylation) pathway. RdDM does not efficiently target the deep interiors of long, established repeats or trapped fragments. Instead, it is an edge-driven phenomenon that focuses heavily on the borders where open euchromatin meets closed heterochromatin.
-
-Lack of Small RNA Signatures: Because host-gene exon fragments embedded within repeats are usually locked down by maintenance machinery rather than undergoing fresh, boundary-driven small-RNA invasion, they completely lack the localized small-RNA flux needed to recruit de novo CHH methyltransferases (like DRM2).
-
-**What Are Unclassified / Degraded Repeats**
-Over millions of years, plant genomes (especially large ones like tomato) accumulate massive amounts of ancient, truncated, and heavily mutated transposable element debris. When elements break down so much that sequence homology tools (like REPET) can no longer match them to a clean family like Gypsy, Copia, or CACTA, they fall into this "unclassified" bin.
-
-2. Why Are They High in Both CHG and CHH Contexts?
-The "Garbage Collection" of Genome Defense: Because these fragments are still fundamentally repetitive DNA, the plant's epigenetic surveillance systems don't care that they are broken or unnamable. They are recognized simply as "foreign/repetitive" and subjected to default, heavy-handed silencing.
-
-A Uniform Background Signal: Unlike active or semi-autonomous families (like Helitrons or SINEs) that have specific regulatory quirks, degraded repeats are scattered randomly everywhere. Consequently, they absorb a broad, non-specific background of both CMT3-driven CHG maintenance and RdDM-driven CHH surveillance, making their profile look remarkably even across different contexts and comparisons.
-
-Essentially, they act as the baseline "noise" of the genome's repetitive landscape—massive in volume, broadly methylated on all fronts, and serving as a stable background against which your more dynamic, specific element classes (like the Helitron and SINE shifts) stand out!
+**Table 2: Observation on background enrichment**
 
 # Spatial Metaplot Analysis Around 5' TE Boundaries
 
