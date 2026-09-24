@@ -189,7 +189,7 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 
 Observations are summarized in Table 2
 
-![Background enrichment - summary](Bakcground_enrichment.png)
+![Background enrichment - summary](Images/Bakcground_enrichment.png)
 
 **Table 2: Observation on background enrichment**
 
