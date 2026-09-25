@@ -103,17 +103,14 @@ Genomic feature distribution of differentially methylated contexts comparing exp
 
 **Observations**<br>
 
-**Overall observation**<br>
-The distribution of genomic features shown in the images suggests a strong noncoding/intergenic bias in differentially methylated regions (DMRs), especially for CHG and CHH methylation. That pattern is biologically plausible in tomato because intergenic regions are rich in repetitive DNA and transposable elements, which are major targets of plant DNA-methylation pathways. <br>
-
 **Intergenic enrichment**<br>
-Roughly 60–80% of DMRs fall in intergenic sequences. This is consistent with methylation changes occurring in transposon-rich or heterochromatic regions rather than primarily inside protein-coding exons.<br>
+Roughly 60–80% of DMRs fall in intergenic sequences. This kind of behavior is expected in a tomato plant because intergenic regions (transposon-rich/heterochromatic regions) are rich in repetitive DNA and transposable elements, which are major targets of plant DNA-methylation pathways. <br>
 
 **CHG and CHH contexts**<br>
-Their low representation in exons and stronger association with intergenic regions fits the expected behavior of non-CG methylation. CHH methylation is commonly associated with RNA-directed DNA methylation (RdDM) and transposon silencing, while CHG methylation is often maintained by CMT3-related pathways.<br>
+Low methylation content in exons fits the expected behavior of non-CG methylation. CHH methylation is commonly associated with RNA-directed DNA methylation (RdDM) and transposon silencing, while CHG methylation is often maintained by CMT3-related pathways.<br>
 
 **CpG context**<br>
-The relatively greater representation of CpG DMRs in introns and promoter-proximal regions is also plausible. CpG methylation can occur within gene bodies and regulatory regions, where it may be associated with transcriptional regulation or, in some cases, alternative splicing.<br>
+The relatively greater representation of CpG DMRs in introns and promoter-proximal regions is also expected. CpG methylation can occur within gene bodies and regulatory regions, where it may be associated with transcriptional regulation or, in some cases, alternative splicing.<br>
 
 **Low exon overlap**<br>
 Fewer than 5% of CHG and CHH DMRs overlapping coding exons suggests that methylation remodeling may avoid directly altering protein-coding regions.<br>
@@ -145,7 +142,7 @@ The broader CHG distribution including degraded repeats, Helitrons, and host-gen
 Finding both LTR superfamilies is reasonable because they are abundant in plant genomes. However, their presence among DMRs does not by itself demonstrate preferential targeting. That conclusion depends on the whole-genome background enrichment analysis.<br>
 
 **Degraded or unclassified repeats**<br>
-These categories should not be dismissed as uninformative. They may represent old TE insertions that have accumulated mutations but retain regulatory or chromatin effects. However, they are also more vulnerable to annotation ambiguity and fragmented interval definitions.<br>
+Degraded/unclassified repeats represent old TE insertions that have accumulated mutations but retain regulatory or chromatin effects.<br>
 <br>
 
 # Integration of Genomic Features and Transposable Elements
