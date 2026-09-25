@@ -163,17 +163,17 @@ Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_
 **Figure 11: DMR Distribution Across REPET Categories for CHH context**
 
 **Observations**
+<br>
+**Non-CG Enrichment at Repeats and Intergenic Regions**<br>
+CHG and CHH DMRs heavily skew toward transposable elements and intergenic spaces, reflecting active, localized maintenance of heterochromatic silencing and repeat suppression via the RNA-directed DNA methylation (RdDM) pathway.<br>
 
-**Non-CG Enrichment at Repeats and Intergenic Regions**
-CHG and CHH DMRs heavily skew toward transposable elements and intergenic spaces, reflecting active, localized maintenance of heterochromatic silencing and repeat suppression via the RNA-directed DNA methylation (RdDM) pathway.
+**Proximity at Gene-TE Boundaries**<br>
+The distance filter (< 2,000 bp upstream and gene bodies) reveals that a targeted subset of non-CG DMRs localizes to repetitive elements situated within proximal promoter regions or long introns.<br>
 
-**Proximity at Gene-TE Boundaries**
-The distance filter (< 2,000 bp upstream and gene bodies) reveals that a targeted subset of non-CG DMRs localizes to repetitive elements situated within proximal promoter regions or long introns.
-
-**Superfamily Target Profiles**
-Across the analyzed transposable element intersections, LTR retrotransposons (predominantly Copia and Gypsy superfamilies) capture the majority of non-CG differential methylation events.
-
-# Whole-Genome Background Enrichment Analysis
+**Superfamily Target Profiles**<br>
+Across the analyzed transposable element intersections, LTR retrotransposons (predominantly Copia and Gypsy superfamilies) capture the majority of non-CG differential methylation events.<br>
+<br>
+# Whole-Genome Background Enrichment Analysis<br>
 
 To determine whether dynamic methylation non-randomly targets specific repeat families, hypergeometric enrichment testing was conducted against the whole-genome REPET background. Observed DMR counts per TE category were compared against total genome-wide REPET feature frequencies. This step established statistically significant enrichment (p < 0.05) for truncated/degraded repeat fragments and specific LTR subfamilies relative to background genomic expectations.
 
@@ -187,7 +187,7 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 
 **Observations**<br>
 
-Observations are summarized in Table 2
+Observations are summarized in Table 2<br>
 
 ![Background enrichment - summary](Images/Background_enrichment.png)
 
@@ -206,11 +206,11 @@ To maintain biological orientation across both forward (+) and reverse (-) stran
 
 **Figure 15: Spatial metaplot (CHH context)**
 
-**Note**
-Negative distances (-1000 to -1 bp) represent the 5' euchromatic outer flank (5' promoter-proximal region).
-Zero (0 bp) represents the physical insertion boundary
-Positive distances (+1 to +2000 bp) represent internal regions within the TE body
-Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp
-
-**References**
+**Note**<br>
+Negative distances (-1000 to -1 bp) represent the 5' euchromatic outer flank (5' promoter-proximal region).<br>
+Zero (0 bp) represents the physical insertion boundary<br>
+Positive distances (+1 to +2000 bp) represent internal regions within the TE body<br>
+Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp<br>
+<br>
+**References**<br>
 [1] Developmentally regulated generation of a systemic signal for long-lasting defence priming in tomato [WGBS], Project PRJNA1144133, NCBI (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1144133)
