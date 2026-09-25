@@ -46,7 +46,7 @@ Using results from previous step, Chromosomal DMR distribution map for all three
 
 ![Genome wide DMR distribution for CpG context](Images/CpG_DMR_Density_Composite_2x2.png)
 
-**Figure 2: Genomic distribution map showing identified CpG counts across chromosomes for each developmental contrast**
+**Figure 2: Genomic distribution map showing identified CpG DMR counts across chromosomes for each developmental contrast**
 <br>
 
 ![Genome wide DMR distribution for CHG context](Images/CHG_DMR_Density_Composite_2x2.png)
