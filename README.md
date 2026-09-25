@@ -50,7 +50,6 @@ Using results from previous step, Chromosomal DMR distribution map for all three
 **Figure 2: Genomic distribution map showing identified CpG counts across chromosomes for each developmental contrast**
 <br>
 
-![Genome wide DMR distribution for CHG context](Images/CHG_DMR_Density_Composite_2x2.png)
 
 <br>
 
@@ -75,7 +74,7 @@ Genes obtained in the previous step were extracted and used for pathway enrichme
 
 ![Summary of pathway enrichment](Images/Pathway_enrichment.png)
 
-**Table 1: Summary of pathway enrichment** 
+**Table 1: Summary of pathway enrichment** <br>
 <br>
 **Observations**<br>
 
