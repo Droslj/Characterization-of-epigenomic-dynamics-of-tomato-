@@ -70,14 +70,15 @@ To determine the potential regulatory impact of epigenomic variations identified
 
 ## Pathway enrichment
  <br>
-Genes obtained in the previous step were extracted and used for pathway enrichment (gProfiler). Results obtained are summarized in the Table 1'
+Genes obtained in the previous step were extracted and used for pathway enrichment (gProfiler). Results obtained are summarized in the Table 1'.<br>
 <br>
 
 ![Summary of pathway enrichment](Images/Pathway_enrichment.png)
 
 **Table 1: Summary of pathway enrichment** 
 <br>
-**Observations**
+**Observations**<br>
+
 CpG context focuses on Seed/Embryo Maturation. The primary CpG epigenetic shifts during fruit transition (2 to 12 WPG Fruit) specifically target embryo and seed development (GO:0009790, GO:0009793, GO:0048316), matching the internal biological shifts of ripening tomato fruits preparing for seed dormancy.<br>
 <br>
 CHH context focuses on Membrane & Stress Signaling. CHH changes dynamically target cell surface signaling (plasma membrane and cell periphery) during fruit maturation, as well as broader stress responsiveness (cellular response to stimulus) during early tissue differentiation.<br>
