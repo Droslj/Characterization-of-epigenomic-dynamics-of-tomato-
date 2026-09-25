@@ -1,13 +1,14 @@
-# Characterization-of-epigenomic-dynamics-of-tomato-
- DNA methylation and RNA sequencing assay for characterisation of (epi)genetic changes on BABA primed tomato plants
+# Characterization-of-epigenomic-dynamics-of-tomato-<br>
+
+DNA methylation for characterisation of (epi)genetic changes on BABA primed tomato plants
 
 **Keywords**
 
-DNA methylation, Whole genome bisulfite sequencing (WGBS), Methylation contexts in plants (CpG, CHG, CHH), Analysis of Differentially methylated region (DMR), Plant priming, Transposable elements
+DNA methylation, Whole genome bisulfite sequencing (WGBS), Methylation contexts in plants (CpG, CHG, CHH), Detailed analysis of Differentially methylated region (DMR), Priming effects on changes in plant methylation, Transposable elements, Whole genome background analysis, Spatial metaplot analysis
 
 **Objective(s)**
 
-To characterize the epigenomic dynamics of tomato (Solanum lycopersicum) during fruit development and tissue differentiation, I created a comlete, strand-aware spatial methylome profiling pipeline. This workflow integrates differentially methylated regions (DMRs) in both CHH and CHG sequence contexts with transposable element (TE) structural annotations from the REPET database. The complete analysis quantifies family-specific TE targeting, genome-wide enrichment relative to background repeat abundance, and fine-scale spatial distribution relative to 5' transposon boundaries.
+To characterize the epigenomic dynamics of tomato (Solanum lycopersicum) during fruit development and tissue differentiation, I created a complete, strand-aware spatial methylome profiling pipeline. This workflow integrates differentially methylated regions (DMRs) in CpG, CHH and CHG sequence contexts with transposable element (TE) structural annotations from the REPET database. The complete analysis quantifies family-specific TE targeting, genome-wide enrichment relative to background repeat abundance, and fine-scale spatial distribution relative to 5' transposon boundaries.
 The data was taken from the following study [1].
 
 # Experimental setup
