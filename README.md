@@ -1,6 +1,6 @@
 # Characterization-of-epigenomic-dynamics-of-tomato-<br>
 
-DNA methylation for characterisation of (epi)genetic changes on BABA primed tomato plants
+Extracting DNA methylation for characterisation of (epi)genetic changes on BABA primed tomato plants
 
 **Keywords**
 
