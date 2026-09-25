@@ -21,7 +21,7 @@ The complete bioinformatics processing pipeline is shown on Figure 1. Complete f
 ![Bioinformatics pipeline](/Images/Complete_processing_flow.png)
 **Figure 1: Complete processing flow**
 
-# Upstream data processing**
+# Upstream data processing
 
 Upstream data processeing was done in usegalaxy platform. Upstream data processing included processing of raw reads obtained from [1] in following steps:
  - Download of reads from NCBI (Fasterq download)
