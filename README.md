@@ -194,9 +194,18 @@ Observations are summarized in Table 2<br>
 **Table 2: Observation on background enrichment**
 
 # Spatial Metaplot Analysis Around 5' TE Boundaries
-
-To resolve the precise spatial targeting of methylation relative to transposon architecture, distance vectors were computed from each DMR center to the 5' insertion edge of the nearest TE.
-To maintain biological orientation across both forward (+) and reverse (-) strand transposons, a strand-aware coordinate transformation was applied.
+<br>
+To examine the spatial distribution of methylation changes relative to transposable elements, the distance from each DMR center to the nearest 5′ TE annotation boundary was calculated. <br>
+Coordinates were transformed according to TE strand so that the same biological orientation was maintained for elements on both the forward and reverse strands. <br>
+Negative distances represent the 1-kb region upstream of the 5′ TE boundary, zero represents the boundary, and positive distances represent positions within the TE body. Distances were summarized in consecutive 100-bp bins from −1 kb to +2 kb.<br>
+<br>
+Peaks near the boundary would indicate a spatial concentration of DMRs at or near the TE edge, whereas a more uniform distribution across positive distances would suggest methylation changes throughout the TE body. <br>
+CHH boundary enrichment would be consistent with localized RdDM-associated regulation, while CHG enrichment may reflect maintenance methylation or chromatin remodeling. <br>
+These interpretations should be evaluated against a matched genomic background and supported by confidence intervals, bin-level counts, and separate analyses for major TE classes.<br>
+<br>
+Figures 14 and 15 show strand-aware spatial distribution of CHG/CHH DMR centers relative to the 5′ boundary of the nearest transposable element. <br>
+Negative distances indicate the upstream flanking region, zero indicates the TE annotation boundary, and positive distances indicate positions within the TE body. <br>
+Values are summarized in 100-bp bins.<br>
 
 ![Spatial metaplot analysis - CHG context](Images/Spatial_metaplot_CHG.png)
 
@@ -206,11 +215,7 @@ To maintain biological orientation across both forward (+) and reverse (-) stran
 
 **Figure 15: Spatial metaplot (CHH context)**
 
-**Note**<br>
-Negative distances (-1000 to -1 bp) represent the 5' euchromatic outer flank (5' promoter-proximal region).<br>
-Zero (0 bp) represents the physical insertion boundary<br>
-Positive distances (+1 to +2000 bp) represent internal regions within the TE body<br>
-Calculated distances were grouped into 100 bp continuous bins spanning -1000 bp to +2000 bp<br>
+
 <br>
 **References**<br>
 [1] Developmentally regulated generation of a systemic signal for long-lasting defence priming in tomato [WGBS], Project PRJNA1144133, NCBI (https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1144133)
