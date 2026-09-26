@@ -38,7 +38,20 @@ Upstream data processeing was done in usegalaxy platform. Upstream data processi
 
 # Differential methylation analysis
 
-Calling differentially methylated regions (using metilene tool) identified DMRs for all relevant contexts (CpG, CHG and CHH). Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG). Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.<br>
+Calling differentially methylated regions (using metilene tool) identified DMRs for all relevant contexts (CpG, CHG and CHH). Pairwise genomic contrasts were conducted across developmental stages and tissue types (e.g., Fruit vs. Leaves at 2 WPG, Fruits: 2 vs. 12 WPG, Leaves vs. Fruits at 12 WPG, and Leaves: 2 vs. 12 WPG). Final results were filtered for difference in methylation and adjusted p-value (|Δmeth| ≥ 10% (CpG, CHG), 20% (CHH); p adj. < 0.01). DMRs were defined based on significant methylation differences across contiguous cytosines in CHH and CHG contexts. Genomic coordinates (chromosome, start, end, and strand) were recorded for each identified region.<br> 
+
+## Dynamics of methylation
+
+Using results of methylation allows determining direction of methylation for all 3 contexts (Hyper vs. Hypomethylation) for different developmental time periods/different tissues compared to control tissue. Direction of methylation is shown on Figure 0
+
+![Direction of methylation for all 3 contexts](Images/Methylation_direction.png)
+
+**Figure 0: Direction of methylation**
+
+**Observations**<br>
+CpG Context exhibits a balanced distribution between hyper- and hypomethylated regions, with total DMR counts surging significantly in developing fruits compared to leaves, reflecting stable gene-body and promoter adjustments during maturation.
+CHG Context maintains lower absolute numbers with a relatively stable proportion of gain and loss across tissues, characteristic of constrained, localized maintenance over heterochromatic regions.
+CHH Context displays an overwhelming volume of differential regions (peaking above 100,000 DMRs in 12 wpg fruit), dominated by active non-CG modifications. This massive surge underscores the heavy reliance on RNA-directed DNA methylation (RdDM) pathways during fruit development and cellular differentiation.
 
 ## Chromosomal DMR distribution map
 
