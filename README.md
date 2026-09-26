@@ -42,11 +42,11 @@ Calling differentially methylated regions (using metilene tool) identified DMRs 
 
 ## Dynamics of methylation
 
-Using results of methylation allows determining direction of methylation for all 3 contexts (Hyper vs. Hypomethylation) for different developmental time periods/different tissues compared to control tissue. Direction of methylation is shown on Figure 0
+Using results of methylation allows determining direction of methylation for all 3 contexts (Hyper vs. Hypomethylation) for different developmental time periods/different tissues compared to control tissue. Direction of methylation is shown on Figure 2.
 
 ![Direction of methylation for all 3 contexts](Images/Methylation_direction.png)
 
-**Figure 0: Direction of methylation**
+**Figure 2: Direction of methylation**
 
 **Observations**<br>
 CpG Context exhibits a balanced distribution between hyper- and hypomethylated regions, with total DMR counts surging significantly in developing fruits compared to leaves, reflecting stable gene-body and promoter adjustments during maturation.
@@ -55,11 +55,11 @@ CHH Context displays an overwhelming volume of differential regions (peaking abo
 
 ## Chromosomal DMR distribution map
 
-Using results from previous step, Chromosomal DMR distribution map for all three contexts was extracted (Figures 2 - 4).
+Using results from previous step, Chromosomal DMR distribution map for all three contexts was extracted (Figures 3 - 5).
 
 ![Genome wide DMR distribution for CpG context](Images/CpG_DMR_Density_Composite_2x2.png)
 
-**Figure 2: Genomic distribution map showing identified CpG DMR counts across chromosomes for each developmental contrast**
+**Figure 3: Genomic distribution map showing identified CpG DMR counts across chromosomes for each developmental contrast**
 <br>
 
 ![Genome wide DMR distribution for CHG context](Images/CHG_DMR_Density_Composite_2x2.png)
@@ -69,7 +69,7 @@ Using results from previous step, Chromosomal DMR distribution map for all three
 
 ![Genome wide DMR distribution for CHH context](Images/CHH_DMR_Density_Composite_2x2.png)
 <br>
-**Figure 4: Genomic distribution map showing identified CHH DMR counts across chromosomes for each developmental contrast**
+**Figure 5: Genomic distribution map showing identified CHH DMR counts across chromosomes for each developmental contrast**
 <br>
 <br>
 
@@ -97,20 +97,20 @@ CHG context didn't provide any significantly enriched pathways.<br>
 <br>
 # Genomic Feature Annotation and Distribution<br>
 <br>
-Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff). Spatial intersections were computed using bedtools intersect, capturing both direct physical overlaps (Distance = 0 bp) and proximal flanking relationships (up to 2000 bp upstream/downstream) for all three contexts Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 5 - 7.<br>
+Genomic feature distribution of differentially methylated contexts comparing experimental factors (Factor 1 - Tisue: Leaf vs. Fruit, Factor 2 - time after germination: 2 vs. 12 weeks) for all three contexts were extracted from data by intersecting with gff gene model (ITAg4.0_gene_models.gff). Spatial intersections were computed using bedtools intersect, capturing both direct physical overlaps (Distance = 0 bp) and proximal flanking relationships (up to 2000 bp upstream/downstream) for all three contexts Genomic feature distribution shows percentage of total DMRs falling into each genomic feature category and is shown on Figures 6 - 8.<br>
 <br>
 
 ![Genomic feature distribution CpG](Images/Genomic_feature_distribution_CpG.png)
 
-**Figure 5: Genomic feature distribution for CpG context**
+**Figure 6: Genomic feature distribution for CpG context**
 
 ![Genomic feature distribution CHG](Images/Genomic_feature_distribution_CHG.png)
 
-**Figure 6: Genomic feature distribution for CHG context**
+**Figure 7: Genomic feature distribution for CHG context**
 
 ![Genomic feature distribution CHH](Images/Genomic_feature_distribution_CHH.png)
 
-**Figure 7: Genomic feature distribution for CHH context**
+**Figure 8: Genomic feature distribution for CHH context**
 
 <br>
 
@@ -136,11 +136,11 @@ Similarly as with the genomic feature distribution, identified DMRs were mapped 
 
 ![TE features](Images/Transposable_feature_distribution_CHG.png)
 
-**Figure 8: Transposable feature content for CHG context**
+**Figure 9: Transposable feature content for CHG context**
 
 ![TE features](Images/Transposable_feature_distribution_CHH.png)
 
-**Figure 9: Transposable feature content for CHH context**
+**Figure 10: Transposable feature content for CHH context**
 <br>
 
 **Observations**<br>
@@ -164,11 +164,11 @@ Direct intersection between genomic DMR intervals and the ITAG4.0_REPET_repeats_
 
 ![DMR distribution across REPET for CHG context](Images/DMR_distribution_across_REPET_CHG.png)
 
-**Figure 10: DMR Distribution Across REPET Categories for CHG context**
+**Figure 11: DMR Distribution Across REPET Categories for CHG context**
 
 ![DMR distribution across REPET for CHH context](Images/DMR_distribution_across_REPET_CHH.png)
 
-**Figure 11: DMR Distribution Across REPET Categories for CHH context**
+**Figure 12: DMR Distribution Across REPET Categories for CHH context**
 
 **Observations**
 <br>
@@ -187,11 +187,11 @@ To determine whether dynamic methylation non-randomly targets specific repeat fa
 
 ![Whole genome background enrichment - CHG context](Images/BG_enrichment_CHG.png)
 
-**Figure 12: Whole genome background enrichment (CHG context)**
+**Figure 13: Whole genome background enrichment (CHG context)**
 
 ![Whole genome background enrichment - CHH context](Images/BG_enrichment_CHH.png)
 
-**Figure 13: Whole genome background enrichment (CHH context)**
+**Figure 14: Whole genome background enrichment (CHH context)**
 
 **Observations**<br>
 
@@ -212,11 +212,11 @@ Values are summarized in 100-bp bins.
 
 ![Spatial metaplot analysis - CHG context](Images/Spatial_metaplot_CHG.png)
 
-**Figure 14: Spatial metaplot (CHG context)**
+**Figure 15: Spatial metaplot (CHG context)**
 
 ![Spatial metaplot analysis - CHH context](Images/Spatial_metaplot_CHH.png)
 
-**Figure 15: Spatial metaplot (CHH context)**
+**Figure 16: Spatial metaplot (CHH context)**
 
 
 <br>
